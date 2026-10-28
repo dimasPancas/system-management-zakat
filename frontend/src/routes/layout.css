@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #f8fafc;
+    --foreground: #36454F;
+    --card: #ffffff;
+    --card-foreground: #36454F;
+    --popover: #ffffff;
+    --popover-foreground: #36454F;
+    --primary: #003366;
+    --primary-foreground: #ffffff;
+    --secondary: #C0C0C0;
+    --secondary-foreground: #003366;
+    --muted: #E0E0E0;
+    --muted-foreground: #52606d;
+    --accent: #00BFFF;
+    --accent-foreground: #ffffff;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --border: #E0E0E0;
+    --input: #C0C0C0;
+    --ring: #003366;
+    --radius: 0.5rem;
+    --delivered: #008000;
+    --delivered-foreground: #ffffff;
+    --pending: #FFA500;
+    --pending-foreground: #ffffff;
+  }
+
+  body {
+    font-family: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+    color: #36454F;
+    background-color: #f8fafc;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-delivered: var(--delivered);
+  --color-delivered-foreground: var(--delivered-foreground);
+  --color-pending: var(--pending);
+  --color-pending-foreground: var(--pending-foreground);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+.bg-tech-grid {
+  background-color: #fafafa;
+  background-image:
+    linear-gradient(to right, rgba(0, 51, 102, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 51, 102, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+}

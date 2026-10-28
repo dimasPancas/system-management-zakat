@@ -1,0 +1,13 @@
+{
+	"name": "system-management-zakat-monorepo",
+	"private": true,
+	"version": "2.0.0",
+	"description": "Multi-Tenant Zakat Distribution & Management Platform (Elysia.js Backend + SvelteKit Frontend)",
+	"scripts": {
+		"dev:backend": "bun run --cwd backend dev",
+		"dev:frontend": "bun run --cwd frontend dev",
+		"start:backend": "bun run --cwd backend start",
+		"build:frontend": "bun run --cwd frontend build",
+		"check:frontend": "bun run --cwd frontend check"
+	}
+}
